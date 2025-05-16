@@ -1,21 +1,21 @@
 # Prototype-Design-Pattern-with-Registry-in-Java
 ---
-
 # Overview
 
 This project demonstrates the Prototype Design Pattern combined with a Registry to manage and clone objects efficiently in Java. It showcases how to create new objects by copying existing prototype instances instead of creating them from scratch, which can improve performance and flexibility.
+
 ---
 # You will learn:
 
-How to implement the Prototype pattern using a generic interface.
+-How to implement the Prototype pattern using a generic interface.
 
-How to create deep copies of objects with copy constructors.
+-How to create deep copies of objects with copy constructors.
 
-How to use a Registry to store and manage prototypes by keys.
+-How to use a Registry to store and manage prototypes by keys.
 
-How to extend prototypes with inheritance (Student and IntelligentStudent).
+-How to extend prototypes with inheritance (Student and IntelligentStudent).
 
-How client code can clone and customize objects from the registry. 
+-How client code can clone and customize objects from the registry. 
 
  ---
 # Table of Contents
@@ -28,27 +28,35 @@ Project Structure
 
 ---
 # Why Prototype Pattern?
+---
+# Performance: 
 
-Performance: Cloning an existing object is often faster than creating a new one with all the setup.
+ Cloning an existing object is often faster than creating a new one with all the setup.
 
-Flexibility: You can add new types of objects with minimal changes.
+# Flexibility: 
 
-Avoid Complex Initialization: Once prototypes are configured, you can clone and tweak them without repeating initialization.
+You can add new types of objects with minimal changes.
 
-Supports Polymorphism: Clone returns the actual object type, making it extensible and reusable.
+# Avoid Complex Initialization: 
+
+Once prototypes are configured, you can clone and tweak them without repeating initialization.
+
+# Supports Polymorphism: 
+
+Clone returns the actual object type, making it extensible and reusable.
 
 ---
 # How it works?
 
-Define a Prototype interface with a clone() method.
+-Define a Prototype interface with a clone() method.
 
-Implement clone() in classes (Student, IntelligentStudent) using copy constructors.
+-Implement clone() in classes (Student, IntelligentStudent) using copy constructors.
 
-Create a StudentPrototypeRegistry to hold prototypes mapped by unique keys.
+-Create a StudentPrototypeRegistry to hold prototypes mapped by unique keys.
 
-Client populates the registry with prototype objects.
+-Client populates the registry with prototype objects.
 
-Client clones prototypes from the registry and customizes new instances as needed.
+-Client clones prototypes from the registry and customizes new instances as needed.
 
 ---
 # Project Structure
