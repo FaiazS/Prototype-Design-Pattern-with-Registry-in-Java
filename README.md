@@ -20,11 +20,11 @@ This project demonstrates the Prototype Design Pattern combined with a Registry 
  ---
 # Table of Contents
 
-Why Prototype Pattern?
+-Why Prototype Pattern?
 
-How it works?
+-How it works?
 
-Project Structure
+-Project Structure
 
 ---
 # Why Prototype Pattern?
